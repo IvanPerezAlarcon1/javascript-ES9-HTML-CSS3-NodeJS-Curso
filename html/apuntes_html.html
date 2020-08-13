@@ -45,5 +45,124 @@
         <div>sección 1</div>
         <div>Con div se ahorra el salto hecho con br, se hace automático</div>
         <div>sección 2</div>
+
+        <br><br><br>
+
+        <form>
+            <!--Fielset sirve para agrupar campos a convenir-->
+            <fieldset>
+                <legend>Campos del contenedor 1</legend>
+                <p>Ingreso de número</p>
+                <label>Ingreso de número </label>
+                <input type="number" placeholder="Ej: 123456789">
+                <hr>
+                <p> de cualquier caracter</p>
+                <input placeholder="texto a ingresar"/>
+                <hr>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Campos del contenedor 2</legend>
+                <p> Ingreso de contraseñas</p>
+                <input type="password">
+                <hr>
+                <p> Ingreso de texto</p>
+                <input type="text">
+                <hr>
+                <p> Ingreso de email</p>
+                <input type="email">
+                <hr>
+                <p> Ingreso de mucho texto, este contenedor 
+                    <br> puede ser redimencionado a boluntad del usuario
+                </p>
+                <textarea></textarea>
+                <hr>
+                <p> 
+                    Enviar los valores del formulario <br>
+                    Por defecto el botón dice submit pero se puede cambiar
+                </p>
+                <input type="submit" value="Aceptar">
+
+                <hr>
+                <p>Menú desplegable</p>
+                <p>Al enviar el formulario, el valor que se pasa es el indicado en value, <br>
+                no el que aparece en la etiqueta
+                </p>
+                <select>
+                    <option value="goku">Opción 1</option>
+                    <option value="vegeta">Opción 2</option>
+                    <option value="gohan">Opción 3</option>
+                </select>
+
+                <hr>
+                <p> 
+                    Botón similar a submit, pero a button se le pueden pasar íconos y más código HTML
+                </p>
+                <button>Enviar respuestas</button>
+            </fieldset>
+        </form>
+
+        <br><br><br>
+
+        <fieldset>
+            <legend>Imágenes</legend>
+            <div><img src="http://placekitten.com/200/300"></div>
+            <div><img src="http://placekitten.com/g/300/200"></div>
+            <div><img src="http://placekitten.com/g/200/200"></div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Links</legend>
+            <a href="https://placekitten.com/">Ir a sitio de gatitos</a>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Listas No ordenada y ordenada</legend>
+            <!-- ul es LISTA NO ORDENADA-->
+            <ul>
+                <li>Lista no ordenada</li>
+                <li>cada elemento se señala con li</li>
+                <li>3r elemento de la lista no ordenada</li>
+            </ul>
+            <hr>
+            <!--ol es LISTA ORDENADA-->
+            <ol>
+                <li>Primero elemento de la lista ordenada</li>
+                <li>Segundo elemento</li>
+                <li>Tercero</li>
+            </ol>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <!--Una tabla se divide en la cabecera, contenido y parte inferior-->
+            <legend>Tablas</legend>
+            <table>
+                <thead><!--declaración cabecera-->
+                    <tr><!-- declaración de fila de una tabla-->
+                        <th>Año</th><!--Contenido de las celdas-->
+                        <th>Mes</th>
+                        <th>Día</th>
+                    </tr>
+                </thead>
+                <tbody><!--Contenido de la tabla-->
+                    <tr><!--Declaración filas de la tabla-->
+                        <td>2020</td>
+                        <td>Julio</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Agosto</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+                <tfoot><!--Pie de la tabla-->
+                    <tr><!--fila footer-->
+                        <td>Cantidad de días mostrados:</td>
+                        <td>2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
     </body>
 </html>
