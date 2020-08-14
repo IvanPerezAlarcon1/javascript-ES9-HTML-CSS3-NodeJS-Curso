@@ -1,0 +1,17 @@
+/*Selectores: Instrucción para seleccionar etiquetas HTML*/
+
+body {
+    background-color: #0eabe9; 
+    /* color: #002468; */
+}
+
+/*También el ID y las clases son usadas para dar estilos*/
+
+#parrafo{ /*El # se usa para darle estilos a los elementos segun su id único*/
+    color: #ff0000;
+}
+
+/*Para seleccionar las clases de una un .nombre_clase*/
+.etiqueta{
+    color: #00aa00;
+}
