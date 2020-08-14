@@ -2,7 +2,68 @@ body{
     background-color: aquamarine;
 }
 
-.caja{
-    margin: 10px; /*margin genera una separación entre la caja div y la caja superior body*/
-    background-color: #aaf;
+.caja1{
+    margin: 10px; /*margin genera una separación entre la caja div y la caja superior body, bordea el contenido por fuera del contenedor div*/
+    padding: 8px; /*bodea el contenido por dentro del contenedor div*/
+    border-width: 10px;
+    border-left-color: red;
+    border-right-color: red;
+    border-style: solid;
+    /* background-color: #aaf; */
+}
+
+.caja2{
+    margin: 10px; 
+    padding: 8px; 
+    border-style: dashed;
+    border-radius: 10px;
+    /* background-color: #aaf; */
+}
+
+.caja3{
+    margin: 10px; 
+    padding: 8px; 
+    border-style: double;
+    border-radius: 20px;
+    /* background-color: #aaf; */
+}
+
+.caja4{
+    margin: 10px; 
+    padding: 8px; 
+    border-style: groove;
+    width: 100px;
+    height: 100px;
+    /* background-color: #aaf; */
+}
+
+.caja5{
+    margin: 10px; 
+    padding: 8px; 
+    border-style: ridge;
+    /* background-color: #aaf; */
+}
+
+.caja6{
+    margin: 10px; 
+    padding: 8px; 
+    border-style: inset;
+    /* background-color: #aaf; */
+}
+
+.caja7{
+    margin: 10px; 
+    padding: 8px; 
+    border-style: outset;
+    /* background-color: #aaf; */
+}
+
+.caja8{
+    margin: 10px; 
+    padding: 8px; 
+    border-style: dotted dashed solid double; /*Estilos multiples, el primero asigna estilo al borde superior, 
+    2do a borde derecho, 3ro a abajo, 4to izquierda*/
+    border-width: 8px;
+    color: blueviolet;
+    /* background-color: #aaf; */
 }
