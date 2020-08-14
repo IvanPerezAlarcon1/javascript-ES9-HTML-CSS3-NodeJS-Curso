@@ -1,0 +1,8 @@
+body{
+    background-color: aquamarine;
+}
+
+.caja{
+    margin: 10px; /*margin genera una separación entre la caja div y la caja superior body*/
+    background-color: #aaf;
+}
