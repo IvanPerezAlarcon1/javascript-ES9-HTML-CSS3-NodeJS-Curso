@@ -8,6 +8,10 @@ body{
     text-decoration: underline;
     text-indent: 40px; /* agrega una identación al párrado*/
     line-height: 1.7;
+    font-family: 'Alata', sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 #p2{
@@ -37,6 +41,7 @@ body{
 #a5{
     text-decoration: none;
     text-transform: lowercase;
+    font-family: "Times New Roman";
 }
 #a6{
     text-decoration: none;
