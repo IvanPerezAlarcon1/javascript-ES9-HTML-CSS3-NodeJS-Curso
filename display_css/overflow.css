@@ -1,0 +1,22 @@
+body{
+    background-color: #eee;
+}
+
+#over{
+    /*En este caso se puso un div con mucho contenido dentro de un cuadrado de 100x100px, en donde el conteido sale del contenedor*/
+    /*En este caso se esconde lo que no alcanza a quedar en el recuadro*/
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+#scroll{
+    width: 100px;
+    height: 100px;
+    /*Agrega las barras de scroll automaticamente en horizontal como vertical*/
+    /* overflow: scroll; */
+    
+    /*Este tipo de scrolling es más util porque solo agrega las que necesite*/
+    overflow: auto;
+
+}
