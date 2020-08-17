@@ -1,0 +1,43 @@
+body{
+    background-color: #eee;
+}
+
+/*Estilos lista no ordenada*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* si hubiera contenido que se salga del contenedor, no se muestra*/
+    position: fixed; /* El contenido queda fijo en la pantalla*/
+    top: 0; /* se va a quedar apegado al techo de la pagina*/
+    width: 100%; /*ocupará el 100% del ancho de la pantalla*/
+    left: 0;
+    background-color: black;
+}
+
+/*Estilos elementos lista no ordenada*/
+li{
+    float: left; /* pasa elementos de tipo bloque a tipo inline para que queden en la misma línea*/
+}
+
+/*Estilos a los links dentro de los elementos de la lista*/
+li a{
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    display: block;
+}
+
+li:hover{
+    background-color: grey;
+}
+
+.active{
+    background-color: green;
+}
+
+/* se corre el contenido ya que la barra de navegacion aparecía por encima*/
+.content{
+    margin-top: 50px;
+}
