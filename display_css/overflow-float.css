@@ -20,3 +20,17 @@ body{
     overflow: auto;
 
 }
+
+img{
+    float: right;
+    
+}
+
+img:hover{
+    opacity: 0.5; /*transparencia de imagen, 0 más alta transparencia, 1 menos transparencia*/
+}
+
+/*Aplica estilos los p dentro del elemento padre div, pero no a los elementos p de afuera del elemento padre div*/
+div p{
+    color: red;
+}
