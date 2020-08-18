@@ -1,0 +1,39 @@
+body{
+    background-color: #eee;
+}
+
+.fondo{
+    background-color: green;
+    background-image: url('http://placekitten.com/1080/1080');
+    /*no-repeat es para no repetir una imagen en el fondo repeat-y 
+    o repeat-x hacen que la imagen se repita solo en el eje
+    y o x respectivamente*/
+    background-repeat: no-repeat;
+    /*La imagen puesta de fondo cambia de posición*/
+    background-position: right top;
+    /*Con esto podemos hacer que la imagen vaya bajando
+    al hacer scrolling*/
+    background-attachment: fixed;
+    /*Esta propiedad ayuda a que la imagen de fondo ocupe el espacio
+    completo del contenedor*/
+    background-size: cover;
+    
+}
+.fondo p{
+    color: white;
+}
+
+.fondo2{
+    color: white;
+    background: green url('http://placekitten.com/1000/1000') no-repeat scroll;
+    background-size: cover;
+}
+
+.fondo3{
+    color: white;
+    /*En colores rgba 0 es negro y 255 es el max de color 
+    o presencia de todos los colores es decir blanco.
+    El último parámetro es la transparencia, donde 0 es mayor
+    cantidad de transparencia y 1 menor*/
+    background-color: rgba(0,0,0,0.5);
+}
