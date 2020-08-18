@@ -1,0 +1,36 @@
+body{
+    background-color: #eee;
+}
+
+#over{
+    /*En este caso se puso un div con mucho contenido dentro de un cuadrado de 100x100px, en donde el conteido sale del contenedor*/
+    /*En este caso se esconde lo que no alcanza a quedar en el recuadro*/
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+#scroll{
+    width: 100px;
+    height: 100px;
+    /*Agrega las barras de scroll automaticamente en horizontal como vertical*/
+    /* overflow: scroll; */
+    
+    /*Este tipo de scrolling es más util porque solo agrega las que necesite*/
+    overflow: auto;
+
+}
+
+img{
+    float: right;
+    
+}
+
+img:hover{
+    opacity: 0.5; /*transparencia de imagen, 0 más alta transparencia, 1 menos transparencia*/
+}
+
+/*Aplica estilos los p dentro del elemento padre div, pero no a los elementos p de afuera del elemento padre div*/
+div p{
+    color: red;
+}

@@ -1,0 +1,26 @@
+body{
+    background-color: aqua;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border-collapse: collapse; /*elimina separación entre elementos de la tabla*/
+}
+
+/*Seleccionar hijos intercalados, osea filas intercaladas de elementos para darles el estilo*/
+tr:nth-child(even){ /* con (odd) se toman los elementos no tomados pior even para darle estilos*/
+    background-color: #f2f2f2;
+}
+
+table th{ /* Estilos para cabeceras de tabla*/
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+}
+
+td{ /* Estilos para elemetos de la tabla*/
+    border: 1px solid #ddd;
+    padding: 8px;
+}

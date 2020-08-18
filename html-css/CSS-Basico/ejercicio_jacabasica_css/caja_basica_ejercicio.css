@@ -1,0 +1,44 @@
+body{
+    background-color:#eeee;
+}
+
+#div1{
+    background-color: white;
+    border-style: outset;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(212, 212, 212, 0.933);
+    border-top: solid 0px;
+}
+
+#footer{
+    padding: 10px;
+    border-top: solid 1px #eee;
+}
+
+#contenido{
+    border-top: solid 1px #eee;
+    padding:10px;
+}
+
+#cabecera{
+    border-bottom: solix 1px #eee;
+    padding:10px;
+}
+
+#aceptar{
+    padding: 5px;
+    background-color: cornflowerblue;
+    border-style: none;
+    color: white;
+}
+
+#cancelar{
+    padding: 5px;
+    background-color: rgb(204, 204, 204);
+    border-style: none;
+    color: white;
+}

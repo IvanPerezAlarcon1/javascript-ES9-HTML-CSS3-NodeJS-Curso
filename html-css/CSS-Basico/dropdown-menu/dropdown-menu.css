@@ -1,0 +1,54 @@
+body{
+    background-color: #eee;
+}
+
+.dropdown-btn{
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; /*Al pasar el cursor por el elemento se muestra una mano*/
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    /*absolute, es una posición referente al padre de los elementos*/
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 5px rgba(0, 0,0, 0.2);
+}
+
+/*selectores multiples, links(a) dentro de dropdown-content*/
+.dropdown-content a{
+    color: black;
+    /*padding: padding vertical y horizontal*/
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block; /*para mostrar los elementos como tipo bloque, es decir hacia abajo*/
+}
+
+/*todos los links dentro de .dropdown-content, al pasar el
+cursor por encima tendrán este estilo*/
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+
+/*cuando el cursor este en la lista, en alguno de sus
+elementos, pero estando solo sobre el botón se aplica 
+este estilo*/
+.dropdown:hover .dropdown-btn{
+    background-color: #3e8e41;
+}
+
+/*Cuando se coloque el cursor en el botón y tambien sobre
+el listado, */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
