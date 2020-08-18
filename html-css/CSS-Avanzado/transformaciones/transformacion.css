@@ -1,0 +1,64 @@
+body{
+    background-color: #eee;
+}
+
+.box{
+    /*Position:relative es para pode mover el contenedor
+    con left*/
+    position: relative;
+    left: 50px;
+    top: 50px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    width: 100px;
+    height: 100px;
+    /*Para que la propiedad de transform furncione, el
+    contenedor debe tener display:block; en este caso
+    los contenedores div tienen esta propiedad por
+    defecto*/
+
+    /* rotate(grados_rotacion)*/
+    transform: rotate(20deg);
+}
+
+.box1{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    width: 100px;
+    height: 100px;
+    /* rotate(horizontal vertical) parametros del 
+    movimiento*/
+    transform: translate(50px,10px);
+}
+
+.box2{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    width: 100px;
+    height: 100px;
+    /*cambia las dimensiones del elemento 
+    scale(crece horizontal, crece vertical)*/
+    transform: scale(0.9,0.9);
+}
+
+.box2:hover{
+    transform: scale(1.05,1.05);
+}
+
+.box3{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    width: 100px;
+    height: 100px;
+    /*retorcer el elemento skew(grados_ejeX,grados_ejeY)*/
+    transform: skewY(25deg);
+}
