@@ -29,11 +29,27 @@ body{
     background-size: cover;
 }
 
+/*GRADIENTES DE COLORES*/
+
+/*se debe hacer uso de background-image para gradientes*/
+/*si no agregamos el parametro de direccion, va de
+arriba hacia abajo*/
+
 .fondo3{
+    background-image: linear-gradient(to bottom right, green, red);
+}
+
+.fondo4{
+    /*linear-gradient(direccion_gradiente, color1,color2)*/
+    /*se pueden usar grados también*/
+    background-image: linear-gradient(-90deg,red,yellow);
+}
+
+/*Se puede colocar también un color intermedio*/
+.fondo5{
     color: white;
-    /*En colores rgba 0 es negro y 255 es el max de color 
-    o presencia de todos los colores es decir blanco.
-    El último parámetro es la transparencia, donde 0 es mayor
-    cantidad de transparencia y 1 menor*/
-    background-color: rgba(0,0,0,0.5);
+    /*se pueden agregar varios colores, y si ocupamos
+    rgba se les puede agregar transparencia también*/
+    background-image: linear-gradient(0deg, rgba(255,0,0,0.5),blue,yellow, violet,
+    tomato);
 }
