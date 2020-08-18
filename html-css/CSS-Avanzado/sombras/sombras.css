@@ -1,0 +1,18 @@
+body{
+    background-color: #eee;
+}
+
+.box{
+    /*se generan sombras para el bloque de las dimensiones
+    del elemento box-shadow: desplazamiento_vertical 
+    desplazamiento_horizontal difuminado color 
+    sentido_difuminado(solo "inset" para que la sombra pase
+    a estar dentro en ves del predeterminado quee está a
+    fuera);*/
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+}
+
+.text{
+    color: white;
+    text-shadow: 0px 1px 2px rgba(255,0,0,0.5);
+}
