@@ -1,0 +1,23 @@
+/*Las grillas son celdas que ayudan a distribuir el contenido en fijas y columnas parecidas a excel junto
+con otras propiedades*/
+
+body{
+    background-color: #eee;
+}
+
+.grid{
+    /*La propiedad grid,hace que todos los elementos que se
+    encuentran dentro del elemento grid, se desplegaran
+    como si fuece una grilla, los despliega como si fuecen
+    una única columna*/
+    display: grid;
+}
+
+.grid-2{
+    /*solo ocupa el espacio que los elementos tienen definido, entonces la grilla será tan ancha como el elemento más ancho de la grilla*/
+    display: inline-grid;
+}
+
+.element{
+    background-color: red;
+}
