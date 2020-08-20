@@ -1,6 +1,13 @@
 /*Las grillas son celdas que ayudan a distribuir el contenido en fijas y columnas parecidas a excel junto
 con otras propiedades, sirve para tener un diseño más responsivo al ajustar la pantalla*/
 
+/*Grilla implícita, es aquella parte de los elementos que no se explicitan en los parámetros de grid-template.*/
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
 body{
     background-color: #eee;
 }
@@ -71,6 +78,40 @@ body{
                         "footer footer";
     grid-template-rows: 150px 1fr 100px;
     grid-template-columns: 1fr 200px;
+    /*Todas las filas que no se hayan definido con anterioridad, tendrán los siguientes parámetros*/
+    grid-auto-rows: 150px;
+    /*Se indica el flujo del grid pudiendo ser filas o columnas, por defecto es en filas*/
+    grid-auto-flow: row;
+    /*Cambiar la posición de los items o elementos del grid, por defecto el valor es "start" que es a la izquierda, "end"
+    lleva el contenido lo más a la derecha posible, "stretch" ocupa todo el espacio disponible para el elemento*/
+    /*justify-items: center;*/
+    /* alinea el objeto dentro del contenedor*/
+    /*align-self: center;*/
+}
+
+.item-1{
+    justify-self: end;
+}
+
+.item-2{
+    align-self: center;
+}
+
+.grid-8{
+    display: grid;
+    /*Aqui ocupa el 100% de la pantalla, es decir de body*/
+    width: 100%;
+    /*da el numero de columnas y su ancho*/
+    grid-template-columns: repeat(4,60px);
+    /*da el nro de filas y el alto*/
+    grid-template-rows: repeat(4,60px);
+    /*Separacion entre los elementos de la grilla*/
+    grid-gap: 5px;
+    /*Situamos el contendio en cierto lugar del contenedor padre,
+    pudiendo ser start-center-end también space-between, space-around,
+    space-evenly, esta ultima sirve para distribuir el contenido
+    uniformemente*/
+    justify-content: end;
 }
 
 .element{
