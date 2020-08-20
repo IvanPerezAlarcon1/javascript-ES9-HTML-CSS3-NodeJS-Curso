@@ -1,5 +1,5 @@
 /*Las grillas son celdas que ayudan a distribuir el contenido en fijas y columnas parecidas a excel junto
-con otras propiedades*/
+con otras propiedades, sirve para tener un diseño más responsivo al ajustar la pantalla*/
 
 body{
     background-color: #eee;
@@ -11,6 +11,10 @@ body{
     como si fuece una grilla, los despliega como si fuecen
     una única columna*/
     display: grid;
+    /* Esta propiedad deja asignar el alto de los elementos de la columna, todos los que no sean asignados queda
+    como automatico
+    grid-template-rows: alto_primer_elemento alto_seg_elemento;*/
+    grid-template-rows: 50px 100px;
 }
 
 .grid-2{
@@ -18,6 +22,75 @@ body{
     display: inline-grid;
 }
 
+.grid-3{
+    /*solo ocupa el espacio que los elementos tienen definido, entonces la grilla será tan ancha como el elemento más ancho de la grilla*/
+    display:grid;
+    /*Esta propiedad divide en columnas los elementos y fragciona las partes para ser asignadas a los elementos, también se pueden
+    asignar % ej 20% 30% y así*/
+    grid-template-columns: 1fr 3fr 5fr;
+    /* grid-template-columns: 50px 100px 120px 60px; */
+}
+
+.grid-4{
+    display:grid;
+    /*minmax(valor_min,valor_max)*/
+    grid-template-rows: minmax(100px,auto);
+    grid-template-columns: minmax(auto,50%);
+
+}
+
+.grid-5{
+    display:grid;
+    /*repeat(veces_que_repite_valor_Asignado,valor_asignado)*/
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(2,1fr);
+    /*lo siguientes parametros sirven para dar un espacio entre filas y o columnas, se pueden resumir en un solo parametro*/
+     /*grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    /*grid-gap valor_entre_filas valor_entre_columnas; si asignamos un solo valor, este será tanto para filas como columnas*/
+    grid-gap: 10px;
+
+}
+
+.grid-6{
+    display:grid;
+    grid-template-rows: repeat(2,[row-inicio] 50px [row-fin]);
+    grid-template-columns: repeat(3,[col-inicio] 1fr [col-fin]);
+    grid-gap: 15px;
+}
+
+.element_inicio{
+    grid-column: col-inicio / col-fin 3;
+    grid-row: row-inicio / row-fin 3;
+}
+
+.grid-7{
+    display: grid;
+    grid-template-areas: "header header"
+                        "content sidedar"
+                        "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+}
+
 .element{
     background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.header{
+    /*Es para agregar un header, toma como parámetros las columnas entre los elementos*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*toma como parámetro las líneas entre los elementos que van en sentido horizontal*/
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /*Forma abreviada para escribir lo anterior*/
+    /* 
+    grid-column: 1 /3;
+    grid-row: 1/3;
+    */
 }
