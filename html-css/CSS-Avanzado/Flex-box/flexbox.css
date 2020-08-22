@@ -36,7 +36,7 @@ body{
     /*aliugn-content distribuye el contenido basado en la altura del contenedor padre, 
     otros valore sson flex-start(por defecto),center y stretch(ocupa todo el espacio disponible) 
     y space-evenly para generar espacios entre los elementos, antes y después*/
-    align-content: flex-end;
+    /*align-content: flex-end; */
 }
 
 .red{
@@ -57,6 +57,8 @@ body{
 .second{
     /* order: 1; */
     flex-grow: 2;
+    /* Alinea el contenido del flex-box*/
+    align-self: center;
 }
 
 .tercero{
