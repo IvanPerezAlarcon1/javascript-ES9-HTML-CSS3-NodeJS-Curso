@@ -30,6 +30,11 @@ body{
     centrado, stretch hace que los elementos ocupen todo
     el alto de los divs en donde se encuentran*/
     align-items: end;
+    height: 200px;
+    /*aliugn-content distribuye el contenido basado en la altura del contenedor padre, 
+    otros valore sson flex-start(por defecto),center y stretch(ocupa todo el espacio disponible) 
+    y space-evenly para generar espacios entre los elementos, antes y después*/
+    align-content: flex-end;
 }
 
 .red{
