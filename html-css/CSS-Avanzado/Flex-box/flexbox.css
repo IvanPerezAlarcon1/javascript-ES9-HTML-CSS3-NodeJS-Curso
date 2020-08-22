@@ -50,6 +50,8 @@ body{
     /*Permite a los elementos crecer de manera dinámica a los elementos basada en el espacio disponible, utiliza las unides
     de espacio disponible que debe tomar*/
     flex-grow: 1;
+    /*se le asigna un width al elemento, luego los demas elementos se reparten el espacio restante según se indique*/
+    flex-basis: 120px;
 }
 
 .second{
@@ -59,5 +61,6 @@ body{
 
 .tercero{
     /* order: 1; */
-    flex-grow: 2;
+    /*Forma corta de escribir flex-grow y flex-basis*/
+    flex: 2 120px;
 }
