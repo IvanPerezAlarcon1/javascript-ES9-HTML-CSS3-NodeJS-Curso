@@ -1,5 +1,7 @@
+/*Existe un contenedor flex padre, luego vienen los hijos los cuales tienen un valor de orden por defecto, el primero es 0*/
+
 body{
-    width: 200px;
+    /* width: 200px; */
 }
 
 
@@ -39,4 +41,23 @@ body{
 
 .red{
     background-color: red;
+}
+
+
+/*aquí se ven los ordenes de los elementos del flex box padre, tienen un orden por defecto el cual puede ser cambiado*/
+.first{
+    /* order: 0; */
+    /*Permite a los elementos crecer de manera dinámica a los elementos basada en el espacio disponible, utiliza las unides
+    de espacio disponible que debe tomar*/
+    flex-grow: 1;
+}
+
+.second{
+    /* order: 1; */
+    flex-grow: 2;
+}
+
+.tercero{
+    /* order: 1; */
+    flex-grow: 2;
 }
