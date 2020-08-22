@@ -1,0 +1,37 @@
+body{
+    width: 200px;
+}
+
+
+.flex{
+    /*pasa de arriba a abajo, a izquierda a derecha*/
+    display: flex;
+    /*Hace que el contenido vaya de derecha a izquierda, posee
+    valores como column(muestra el contenido en columnas),
+    column-reverse(muestra el ultimo elemento primero)*/
+    /* flex-direction: row-reverse; */
+
+    /*si el contenido se sale del contenedor en ancho, se pasa 
+    a la siguiente línea*/
+    /* flex-wrap: wrap; */
+
+    /*este es un atajo para flex-direction y flex-wrap, tiene
+    la direccion row y con wrap si el contenido no alcanza pasa
+    a la siguiente línea*/
+    flex-flow: row wrap;
+    /*alinea el contenido en el flex-box, puede tener
+    valores como space-between para poner espacio entre los 
+    elementos pero no al inicio ni al final. space-evenly pone
+    espacio entre los elementos incluido el inicio y el fina
+    de la flex-box*/
+    justify-content: center;
+    /*align-items:end; desplaza el contenido del flexbox hacia 
+    la parte de abajo de este, el valor center deja el contenido
+    centrado, stretch hace que los elementos ocupen todo
+    el alto de los divs en donde se encuentran*/
+    align-items: end;
+}
+
+.red{
+    background-color: red;
+}
