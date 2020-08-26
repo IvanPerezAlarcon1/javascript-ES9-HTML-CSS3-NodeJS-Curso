@@ -1,3 +1,8 @@
 C:\Users\ivan1\Desktop\repositoriosGITHUB\javascript-ES9-HTML-CSS3-NodeJS-Curso\html\index.html
 
 lo anterior para ver la página index.html en el navegador, es el fichero que la aloja y el archivo
+
+
+PARA JS
+Para correr el programa se debe ingresar por consola:
+node index.js
