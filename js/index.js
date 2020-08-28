@@ -108,3 +108,12 @@ console.log(resAND2);
 console.log(resNOT);
 
 
+//CONTROL DE FLUJO
+console.log("CONTROL DE FLUJO")
+const edad = 10;
+if(edad > 5 && edad <18){
+    console.log("El niño puede jugar pues su edad es de: ",edad);
+}else{
+    console.log("El niño no puede jugar pues su edad es de: ",edad);
+}
+
