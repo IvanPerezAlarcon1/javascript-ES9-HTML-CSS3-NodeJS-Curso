@@ -59,6 +59,52 @@ console.log("Arreglo 1: ",arreglo1)
 arreglo1.pop()
 console.log("Arreglo 1: ",arreglo1)
 
+//No se puede modificar una constante declarada const, pero si se puede modificar una variable let
+const num5 = 5;
+let num6 = 5;
+console.log("NUMERO CONST: ",num5);
+console.log("NUMERO LET: ",num6);
+//num5++;
+num6++;
+//console.log("NUMERO CONST: ",num5);
+console.log("NUMERO LET MODIFICADO: ",num6);
 
+//OPERADORES DE COMPARACIÓN
+const res1 = 5 === 6
+const res2 = 5 == 6
+const res3 = 5 == '5';
+const res4 = 5 ==='5';
+console.log('OPERADORES DE COMPARACIÓN');
+console.log(res1);
+console.log(res2);
+console.log(res3);
+console.log(res4);
+
+console.log("Condiciones de mayor o menor qué");
+
+const res5 = 5 < 6;
+const res6 = 5 > 6;
+const res7 = 5 <= 6;
+const res8 = 5 >= 6;
+console.log(res5);
+console.log(res6);
+console.log(res7);
+console.log(res8);
+
+//OPERADORES LÓGICOS and &&, or || , not !
+//El OR evalua hasta encontrar el primer true, luego lo demás no lo toma en cuenta porque no importa su valor bool
+//or toma como valores TRUE a strings, numeros y objetos, excepto el cero que evalua como false
+const resOR = false || true;
+// El AND toma en cuenta todo hasta encontrar un valor false, si esto pasa lo demás no lo toma en cuenta
+const resAND = true && true;
+const resAND1 = false && false;
+const resAND2 = true && true && false && true;
+const resNOT = !true;
+console.log("Operadores lógicos");
+console.log(resOR);
+console.log(resAND);
+console.log(resAND1);
+console.log(resAND2);
+console.log(resNOT);
 
 
