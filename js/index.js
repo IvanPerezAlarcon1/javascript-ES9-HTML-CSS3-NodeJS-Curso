@@ -215,6 +215,7 @@ console.log(xx);
 
 //FUNCIONES CON CALLBACK
 //UN CALLBACK es una funcion que se va a ejecutar al final de una función
+//En JS las funciones son valores que se pueden pasar como argumentos a otras funciones
 console.log("FUNCIÓN CON CALLBACK");
 function sumar(a,b,cb){//cb es la función que se le pasa a la funcion padre
     const res_x = a + b;
@@ -226,3 +227,16 @@ function func(resultado) {
 }
 
 sumar(4,5,func);//la funcion se pasa sin parametros para que sea ejecutada después y no en este momento
+
+//FAT ARROW FUNCTIONS
+//no se tiene que usar la palabra function para declararse, también si tiene una sola linea se declara en la misma línea
+//se declaran si tienen solo una sola línea con const nombrefuncion FAF
+//si tiene más de una línea se declara como otraFAF, es decir debe tener el return y las llaves {}
+console.log("FAT ARROW FUNCTIONS");
+
+const fatArrowFunction = (a,b) => a+b; //retorna implicitamente a+b
+const otraFAF = (a,b) => {
+    return a + b;
+}
+console.log(fatArrowFunction(1,2));
+console.log(otraFAF(1,3));
