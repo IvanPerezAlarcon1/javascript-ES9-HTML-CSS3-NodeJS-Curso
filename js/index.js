@@ -212,3 +212,17 @@ function suma(a,b){
 }
 let xx = suma(5,2);
 console.log(xx);
+
+//FUNCIONES CON CALLBACK
+//UN CALLBACK es una funcion que se va a ejecutar al final de una función
+console.log("FUNCIÓN CON CALLBACK");
+function sumar(a,b,cb){//cb es la función que se le pasa a la funcion padre
+    const res_x = a + b;
+    cb(res_x);
+}
+
+function func(resultado) {
+    console.log("Resultado: ", resultado);
+}
+
+sumar(4,5,func);//la funcion se pasa sin parametros para que sea ejecutada después y no en este momento
