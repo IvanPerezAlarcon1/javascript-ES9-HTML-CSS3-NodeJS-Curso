@@ -181,3 +181,34 @@ for(let i=0;i < arreglo_mixto.length;i++){
 for(let i=0;i < arreglo_mixto_let.length;i++){
     console.log(arreglo_mixto_let[i]);
 }
+
+
+//FUNCIONES
+console.log("FUNCIONES");
+console.log("FUNCION SIN ARGUMENTOS");
+function iterar(){
+    const nums = [1,2,3, "hola",5,6];
+    for(let i=0;i<nums.length;i++){
+        console.log(nums[i]);
+    }
+}
+iterar();
+
+//funcion con argumentos
+const nums111 = [7,8,9,"chao",10,11];
+console.log("FUNCION CON ARGUMENTOS");
+function iterar1(arg1){
+    for(let i=0;i<arg1.length;i++){
+        console.log(arg1[i]);
+    }
+}
+iterar1(nums111);
+
+
+//MAS FUNCIONES
+console.log("FUNCIÓN SUMA");
+function suma(a,b){
+    return a+b;
+}
+let xx = suma(5,2);
+console.log(xx);
