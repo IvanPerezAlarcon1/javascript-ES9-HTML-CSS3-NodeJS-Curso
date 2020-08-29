@@ -109,6 +109,8 @@ console.log(resNOT);
 
 
 //CONTROL DE FLUJO
+
+//IF, ELSE
 console.log("CONTROL DE FLUJO")
 const edad = 10;
 if(edad > 5 && edad <18){
@@ -117,3 +119,65 @@ if(edad > 5 && edad <18){
     console.log("El niño no puede jugar pues su edad es de: ",edad);
 }
 
+//WHILE
+console.log("Ciclo WHILE");
+let contador = 0;
+while(contador < 5){
+    console.log("valor de contador: ",contador);
+    contador++;
+}
+
+//switch : ejecutar una u otra instrucción
+//IMPORTANTE: cada caso debe tener la instrucción break para que no se ejecuten los demás casos
+console.log("SWITCH: Ejecutar una u otra instrucción")
+switch("hola"){
+    case 1:{
+        console.log("Se ha ejecutado la opción 1");
+        break;
+    }
+    case 2:{
+        console.log("Se ha ejecutado la opción 2");
+        break;
+    }
+    case 3:{
+        console.log("Se ha ejecutado la opción 3");
+        break;
+    }
+    case "hola":{
+        console.log("Hola, ha saludado al programa ingresando un hola");
+        break;
+    }
+    default: {
+        console.log("Este valor es para un caso no esperado, ya sea un caso no contemplado o numero no contemplado");
+        break;
+    }
+}
+
+
+//FOR
+console.log("CICLO FOR")
+for(let i = 0; i<5; i++){
+    console.log("Iteración FOR nro: ", i);
+}
+
+console.log("Imprimir elementos de un arreglo, y luego se le agrega un elemento mediante PUSH");
+const arreglo_mixto = [1,2,3,"cuatro","cinco",6,7,8,"nueve","diez"];
+let arreglo_mixto_let = [1,2,3,"cuatro","cinco",6,7,8,"nueve","diez"];
+for(let i=0;i < arreglo_mixto.length;i++){
+    console.log(arreglo_mixto[i]);
+}
+
+for(let i=0;i < arreglo_mixto_let.length;i++){
+    console.log(arreglo_mixto_let[i]);
+}
+
+arreglo_mixto.push(11);
+arreglo_mixto_let.push(11);
+
+for(let i=0;i < arreglo_mixto.length;i++){
+    console.log(arreglo_mixto[i]);
+}
+
+for(let i=0;i < arreglo_mixto_let.length;i++){
+    console.log(arreglo_mixto_let[i]);
+}
