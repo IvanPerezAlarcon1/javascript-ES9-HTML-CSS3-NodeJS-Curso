@@ -240,3 +240,11 @@ const otraFAF = (a,b) => {
 }
 console.log(fatArrowFunction(1,2));
 console.log(otraFAF(1,3));
+
+//FUNCIONES ANÓNIMAS
+//Declaración de una función dentro de otra, no es conveniente ya que no permite la reutilización de dicho código
+console.log("FUNCIONES ANÓNIMAS");
+
+sumar(6,4, function(r){
+    console.log("Resultado función anónima: ", r);
+})
