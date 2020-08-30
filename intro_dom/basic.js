@@ -1,5 +1,5 @@
-console.log("Intro a DOM desde index.js")
-alert("Intro a DOM desde index.js")
+console.log("Intro a DOM desde basic.js")
+alert("Intro a DOM desde basic.js")
 
 //Obtener un elemento de HTML mediante su ID
 const parrafo = document.getElementById("text")
