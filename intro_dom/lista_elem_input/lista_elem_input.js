@@ -29,6 +29,15 @@ window.onload = () => {
         //muestra por consola el arreglo generado con cada ingreso de datos
         console.log(todosTemplate);
 
-        
+        //permite seleccionar por clases, etiquetas, nombres, ids de HTML
+        //En este caso se buscará por ID 
+        const elementos = document.querySelectorAll("#todo-list li");
+        elementos.forEach((elemento,i) => {//itera la variable elementos
+            console.log(elemento,i);
+            //en el evento click, ejecuta algo
+            elemento.addEventListener("click", () => {
+                console.log(elemento,i);
+            })
+        })  
     }
 }
