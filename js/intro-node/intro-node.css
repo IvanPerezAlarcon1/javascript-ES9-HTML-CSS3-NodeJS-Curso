@@ -1,0 +1,20 @@
+.grid{
+    display: grid;
+    /*Aqui ocupa el 100% de la pantalla, es decir de body*/
+    width: 100%;
+    /*da el numero de columnas y su ancho*/
+    grid-template-columns: repeat(4,60px);
+    /*da el nro de filas y el alto*/
+    grid-template-rows: repeat(4,60px);
+    /*Separacion entre los elementos de la grilla*/
+    grid-gap: 5px;
+    /*Situamos el contendio en cierto lugar del contenedor padre,
+    pudiendo ser start-center-end también space-between, space-around,
+    space-evenly, esta ultima sirve para distribuir el contenido
+    uniformemente*/
+    /* justify-content: end; */
+}
+
+.element{
+    background-color: red;
+}
