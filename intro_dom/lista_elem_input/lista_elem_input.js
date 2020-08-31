@@ -1,14 +1,17 @@
-const todos = [];
+//shortCircuit: si es que un elemento llamado no tiene elementos retorna algo, en vez de null
+//localstorage, almacena información en el navegador
+//luego, usamos JSONPARSE para transformar los elementos en un arreglo, pasando como argumento lo que el localstorage devuelva
+const todos = localStorage.getItem("todos") || [];
 
 const render = () => {
     const todoList = document.getElementById("todo-list");
         todoList.innerHTML = '';
-        for(let i=0;i<todos.length;i++){
+        /*for(let i=0;i<todos.length;i++){
             todoList.innerHTML = todoList.innerHTML + "<li>" + todos[i] + "</li>";
-        }
+        }*/
         const todosTemplate = todos.map(t =>"<li>" + t + "</li>");
         todoList.innerHTML = todosTemplate.join("");
-        console.log(todosTemplate);
+        //console.log(todosTemplate);
         const elementos = document.querySelectorAll("#todo-list li");
         elementos.forEach((elemento,i) => {
             elemento.addEventListener("click", () => {
@@ -21,7 +24,10 @@ const render = () => {
         })  
 }
 
+
 window.onload = () => {
+    render();
+
     //llamamos al elemento form de HTML mediante su id para utilizarlo
     const form = document.getElementById("todo-form");
     //En form, reemplazamos su evento submit, e quiere decir evento
@@ -34,7 +40,10 @@ window.onload = () => {
         todo.value = '';//dejar vacío el contenedor
         //ver texto ingresado
         todos.push(todoText);
-
+        //transformamos los elementos de todos en strings
+        const todoStrings = JSON.stringify(todos);
+        //aqui reemplazamos en todos los elementos de todoStrings
+        localStorage.setItem("todos",todoStrings);
 
         /*
         //LA SIMPLIFICACIÓN DE ESTA PORCIÓN DE CÓD ESTÁ MÁS ABAJO Y ACTIVA llamda en la función render()
@@ -75,6 +84,5 @@ window.onload = () => {
             })
         })  
         */
-       render();
     }
 }
