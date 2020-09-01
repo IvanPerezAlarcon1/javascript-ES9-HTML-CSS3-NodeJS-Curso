@@ -7,3 +7,10 @@ node i es la abreviación de install -S para que se guarde dentro de las depende
 3) Programar un servidor, aunque sea uno simple
 
 4) para correr el servicio, vamos a la carpeta que aloja el proyecto y ingresamos el siguiente comando [node nombre.js]
+
+NOTA: Verbos api REST
+GET -> Listar todos o un elemento /users o /users:id respectivamente -> Estado nro 200
+POST -> Crear un elemento /users -> Estado nro 201
+PUT -> Reemplazar elemento mediante su id /users:id -> Estado nro 204
+PATCH -> Actualizar un dato por su id -> Estado nro 204
+DELETE -> Eliminar elemento mediante su id  -> Estado nro 204
