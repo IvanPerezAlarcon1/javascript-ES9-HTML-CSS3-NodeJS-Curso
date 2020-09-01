@@ -1,0 +1,9 @@
+1) Una vez creda la carpeta donde haremos nuestro proyecto, ingresamos el comando [npm init -y], lo cual creará un archivo package.json
+con info del proyecto, sus paquetes y dependencias.
+
+2) Ahora instalamos la librería Express para apis ingresando el siguiente comando [npm i -S express], donde npm es el manejador de paquetes de
+node i es la abreviación de install -S para que se guarde dentro de las dependencias y express es el nombre de la librería autilizar
+
+3) Programar un servidor, aunque sea uno simple
+
+4) para correr el servicio, vamos a la carpeta que aloja el proyecto y ingresamos el siguiente comando [node nombre.js]
